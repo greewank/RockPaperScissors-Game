@@ -39,7 +39,7 @@ function lose(user, computer){
     computerScore_span.innerHTML = compScore;
     result_p.innerHTML = `${convertToWord(computer)}${smallUserWord} covers ${convertToWord(user)}${smallCompWord} which makes the computer the winner!`;
     document.getElementById(user).classList.add('red-glow');
-    setTimeout(()=> document.getElementById(user).classList.remove('red-glow'), 300);
+    setTimeout(()=> document.getElementById(user).classList.remove('red-glow'), 500);
 }
 
 function draw(user, computer){
